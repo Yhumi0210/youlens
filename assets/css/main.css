@@ -120,6 +120,7 @@
 .selfportrait__text__me {
   font-size: 1.5rem;
   font-family: "junkga-thin", sans-serif;
+  line-height: 3rem;
 }
 .selfportrait__text__img {
   width: 40%;
