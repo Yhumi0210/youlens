@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+  font-family: 'junkga-regular';
+  src: url('/fonts/Jungka-Regular.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-bold';
+  src: url('/fonts/Jungka-Bold.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-thin';
+  src: url('/fonts/Jungka-Book.otf') format('opentype')
+}
 
 //.roboto-medium {
 //  font-family: "Roboto", sans-serif;
@@ -8,13 +19,15 @@
 
 // colors
 
-$light-grey: #C6D4D7;
-$dark-grey: #3E4751;
+$light-blue: #C7D5D8;
+$dark-blue: #3F4851;
 $white: #FFFFFF;
 
 // fonts
 
-$font: 'Roboto', sans-serif;
+$bold: 'junkga-bold', sans-serif;
+$regular: 'junkga-regular', sans-serif;
+$thin: 'junkga-thin', sans-serif;
 
 // font weight
 
@@ -29,9 +42,8 @@ $weight: 500;
 $style: normal;
 
 * {
-  font-family: $font;
-  font-weight: $weight;
-  font-style: $style;
+  font-family: $regular;
+  // font-weight: $weight;
   margin: 0;
   padding: 0;
 
@@ -40,7 +52,7 @@ $style: normal;
 .hero {
   z-index: 1;
   position: relative;
-  //background-color: $dark-grey;
+  //background-color: $dark-blue;
   display: flex;
   justify-content: flex-end;
   &__nav {
@@ -57,18 +69,18 @@ $style: normal;
       cursor: pointer;
       &__page {
         text-transform: uppercase;
-        color: $light-grey;
+        color: $light-blue;
       }
-    }
-    &__logo {
-      width: 3rem;
-      height: 3rem;
+      &__logo {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
 }
 
 .main {
-  //background-color: $dark-grey;
+  background-color: $dark-blue;
   height: 50rem;
   margin-top: -5rem;
   display: flex;
@@ -81,8 +93,8 @@ $style: normal;
   &__h1 {
     position: relative;
     z-index: 1;
-    margin: -30rem 8rem 0 8rem;
-    color: $light-grey;
+    margin: 18rem 8rem 0 8rem;
+    color: $light-blue;
     font-size: 2.5rem;
   }
   &__arrow {
@@ -90,15 +102,89 @@ $style: normal;
     z-index: 1;
     width: 2rem;
     height: 2rem;
-    color: $light-grey;
+    color: $light-blue;
     align-self: center;
-    margin-top: 14rem;
+    margin-top: 12rem;
+  }
+}
+
+.gallery {
+  background-color: $white;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    align-self: flex-end;
+    margin: 2rem 2rem 0 0;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.selfportrait {
+  background-color: $light-blue;
+  display: flex;
+  flex-direction: column;
+  color: $dark-blue;
+  padding: 2rem 8rem 2rem 8rem;
+  &__logo {
+    align-self: flex-end;
+    margin: 0 -6rem 0 0;
+    width: 3rem;
+    height: 3rem;
+  }
+  &__title {
+    font-size: 2rem;
+  }
+  &__line {
+    display: block;
+    background-color: $dark-blue;
+    height: 2px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+  &__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    &__me {
+      font-size: 1.5rem;
+      font-family: $thin;
+    }
+    &__img {
+      width: 40%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  &__service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      &__icon {
+        margin-top: 1rem;
+        width: 3rem;
+        height: 3rem;
+      }
+      &__text {
+        margin: 1rem 0 1rem 0;
+      }
+    }
   }
 }
 
 .footer {
-  background-color: $dark-grey;
-  color: $light-grey;
+  background-color: $dark-blue;
+  color: $light-blue;
   display: flex;
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
@@ -114,7 +200,7 @@ $style: normal;
       &:after {
         content: "";
         display: block;
-        background-color: $light-grey;
+        background-color: $light-blue;
         width: 100%;
         height: 2px;
         margin: 0.5rem 0 0.8rem 0;
@@ -124,7 +210,7 @@ $style: normal;
       &:after {
         content: "";
         display: block;
-        background-color: $light-grey;
+        background-color: $light-blue;
         width: 100%;
         height: 2px;
         margin: 0.7rem 0 0.8rem 0;
@@ -135,14 +221,16 @@ $style: normal;
         justify-content: space-between;
         align-items: center;
         &__phone {
+          font-family: $thin;
         }
         &__line {
           display: block;
-          background-color: $light-grey;
+          background-color: $light-blue;
           height: 1.5rem;
           width: 2px;
         }
         &__mail {
+          font-family: $thin;
         }
       }
     }
@@ -153,16 +241,19 @@ $style: normal;
         flex-direction: row;
         justify-content: space-between;
         &__insta {
+          font-family: $thin;
           text-decoration: none;
-          color: $light-grey;
+          color: $light-blue;
         }
         &__behance {
+          font-family: $thin;
           text-decoration: none;
-          color: $light-grey;
+          color: $light-blue;
         }
       }
     }
     &__rights {
+      font-family: $thin;
       text-align: center;
       font-size: 0.8rem;
     }
