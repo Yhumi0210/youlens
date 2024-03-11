@@ -69,7 +69,11 @@ $style: normal;
       cursor: pointer;
       &__page {
         text-transform: uppercase;
-        color: $light-blue;
+        &__a {
+          text-decoration: none;
+          color: $light-blue;
+          font-size: 1.2rem;
+        }
       }
       &__logo {
         width: 3rem;
@@ -80,20 +84,22 @@ $style: normal;
 }
 
 .main {
-  background-color: $dark-blue;
-  height: 50rem;
-  margin-top: -5rem;
+  //background-color: $dark-blue;
+  height: 100%;
+  margin-top: -6rem;
   display: flex;
   flex-direction: column;
-  &__video {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  &__container {
+    &__video {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
   }
   &__h1 {
     position: relative;
     z-index: 1;
-    margin: 18rem 8rem 0 8rem;
+    margin: -24rem 8rem 0 8rem;
     color: $light-blue;
     font-size: 2.5rem;
   }
@@ -104,18 +110,18 @@ $style: normal;
     height: 2rem;
     color: $light-blue;
     align-self: center;
-    margin-top: 12rem;
+    margin-top: 3rem;
   }
 }
 
-.gallery {
+.project {
   background-color: $white;
   height: 50rem;
   display: flex;
   flex-direction: column;
   &__logo {
     align-self: flex-end;
-    margin: 2rem 2rem 0 0;
+    margin: 3.8rem 2rem 0 0;
     width: 3rem;
     height: 3rem;
   }
@@ -134,7 +140,7 @@ $style: normal;
     height: 3rem;
   }
   &__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   &__line {
     display: block;
@@ -151,7 +157,6 @@ $style: normal;
     margin: 1rem 0 1rem 0;
     &__me {
       font-size: 1.5rem;
-      font-family: $thin;
       line-height: 3rem;
     }
     &__img {
@@ -197,7 +202,7 @@ $style: normal;
   }
   &__info {
     &__title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       &:after {
         content: "";
         display: block;
@@ -223,6 +228,7 @@ $style: normal;
         align-items: center;
         &__phone {
           font-family: $thin;
+          font-size: 1.5rem;
         }
         &__line {
           display: block;
@@ -232,6 +238,7 @@ $style: normal;
         }
         &__mail {
           font-family: $thin;
+          font-size: 1.5rem;
         }
       }
     }
@@ -243,11 +250,13 @@ $style: normal;
         justify-content: space-between;
         &__insta {
           font-family: $thin;
+          font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
         }
         &__behance {
           font-family: $thin;
+          font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
         }
@@ -256,7 +265,7 @@ $style: normal;
     &__rights {
       font-family: $thin;
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 }

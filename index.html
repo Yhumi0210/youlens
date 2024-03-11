@@ -12,17 +12,25 @@
 <header class="hero">
     <nav class="hero__nav">
         <ul class="hero__nav__link">
-            <li class="hero__nav__link__page">projets</li>
-            <li class="hero__nav__link__page">à propos</li>
-            <li class="hero__nav__link__page">contact</li>
+            <li class="hero__nav__link__page">
+                <a class="hero__nav__link__page__a" href="#project-section">projets</a>
+            </li>
+            <li class="hero__nav__link__page">
+                <a class="hero__nav__link__page__a" href="#selfportrait-article">à propos</a>
+            </li>
+            <li class="hero__nav__link__page">
+                <a class="hero__nav__link__page__a" href="#contact-section">contact</a>
+            </li>
             <img class="hero__nav__link__logo" src="img/icons/logoclair.svg" alt="logo Youlens">
         </ul>
     </nav>
 </header>
-<section class="main">
+<section id="main-section" class="main">
 <!--    <iframe class="main__video" src="https://www.youtube.com/embed/ODGsPxI4FCA?si=9VI1UHV2DrCYU3in&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>-->
 <!--    </iframe>-->
-    <!--    <video class="hero__video" controls src="https://youtu.be/ODGsPxI4FCA"></video>-->
+    <div class="main__container">
+        <video class="main__container__video" controls autoplay loop src="img/video/youlens_showreel_2023-20242.mp4"></video>
+    </div>
     <h1 class="main__h1">Photographe et vidéaste passionné,<br>
         spécialisé dans la captation d'instants uniques.<br>
         Des événements mémorables aux clients variés,<br>
@@ -32,10 +40,10 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
     </svg>
 </section>
-<section class="gallery">
-    <img class="gallery__logo" src="img/icons/logofonce.svg" alt="logo Youlens">
+<section id="project-section" class="project">
+    <img class="project__logo" src="img/icons/logofonce.svg" alt="logo Youlens">
 </section>
-<article class="selfportrait">
+<article id="selfportrait-article" class="selfportrait">
     <img class="selfportrait__logo" src="img/icons/logofonce.svg" alt="logo Youlens">
     <h2 class="selfportrait__title">Qui suis-je ?</h2>
     <p class="selfportrait__line"></p>
@@ -53,7 +61,7 @@
             <br>
             Je réalise mes vidéos entièrement, de la prise<br>
             de vue jusqu’à la post production.</p>
-        <img class="selfportrait__text__img" src="img/img/portraitguillaume.JPG" alt="portrait de Guillaume">
+        <img class="selfportrait__text__img" src="img/img/portraitguillaume.webp" alt="portrait de Guillaume">
     </div>
     <h3 class="selfportrait__title">Mes services</h3>
     <p class="selfportrait__line"></p>
@@ -84,7 +92,7 @@
         </p>
     </div>
 </article>
-<footer class="footer">
+<footer id="contact-section" class="footer">
     <img class="footer__logo" src="img/icons/logoclair.svg" alt="logo Youlens">
     <section class="footer__info">
         <h5 class="footer__info__title">

@@ -38,7 +38,11 @@
 }
 .hero__nav__link__page {
   text-transform: uppercase;
+}
+.hero__nav__link__page__a {
+  text-decoration: none;
   color: #C7D5D8;
+  font-size: 1.2rem;
 }
 .hero__nav__link__logo {
   width: 3rem;
@@ -46,13 +50,12 @@
 }
 
 .main {
-  background-color: #3F4851;
-  height: 50rem;
-  margin-top: -5rem;
+  height: 100%;
+  margin-top: -6rem;
   display: flex;
   flex-direction: column;
 }
-.main__video {
+.main__container__video {
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -60,7 +63,7 @@
 .main__h1 {
   position: relative;
   z-index: 1;
-  margin: 18rem 8rem 0 8rem;
+  margin: -24rem 8rem 0 8rem;
   color: #C7D5D8;
   font-size: 2.5rem;
 }
@@ -71,18 +74,18 @@
   height: 2rem;
   color: #C7D5D8;
   align-self: center;
-  margin-top: 12rem;
+  margin-top: 3rem;
 }
 
-.gallery {
+.project {
   background-color: #FFFFFF;
   height: 50rem;
   display: flex;
   flex-direction: column;
 }
-.gallery__logo {
+.project__logo {
   align-self: flex-end;
-  margin: 2rem 2rem 0 0;
+  margin: 3.8rem 2rem 0 0;
   width: 3rem;
   height: 3rem;
 }
@@ -101,7 +104,7 @@
   height: 3rem;
 }
 .selfportrait__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .selfportrait__line {
   display: block;
@@ -119,7 +122,6 @@
 }
 .selfportrait__text__me {
   font-size: 1.5rem;
-  font-family: "junkga-thin", sans-serif;
   line-height: 3rem;
 }
 .selfportrait__text__img {
@@ -163,7 +165,7 @@
   height: 3rem;
 }
 .footer__info__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .footer__info__title:after {
   content: "";
@@ -189,6 +191,7 @@
 }
 .footer__info__contact__number__phone {
   font-family: "junkga-thin", sans-serif;
+  font-size: 1.5rem;
 }
 .footer__info__contact__number__line {
   display: block;
@@ -198,6 +201,7 @@
 }
 .footer__info__contact__number__mail {
   font-family: "junkga-thin", sans-serif;
+  font-size: 1.5rem;
 }
 .footer__info__social {
   margin-bottom: 4rem;
@@ -209,18 +213,20 @@
 }
 .footer__info__social__link__insta {
   font-family: "junkga-thin", sans-serif;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
 }
 .footer__info__social__link__behance {
   font-family: "junkga-thin", sans-serif;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
 }
 .footer__info__rights {
   font-family: "junkga-thin", sans-serif;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
