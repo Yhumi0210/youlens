@@ -54,10 +54,19 @@ $style: normal;
   position: relative;
   //background-color: $dark-blue;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+  &__brand {
+    display: flex;
+    color: $light-blue;
+    font-family: $regular;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    text-align: center;
+  }
   &__nav {
     width: 50%;
-    margin: 2rem 2rem 0 0;
     &__link {
       display: flex;
       flex-direction: row;
@@ -73,6 +82,7 @@ $style: normal;
           text-decoration: none;
           color: $light-blue;
           font-size: 1.2rem;
+          text-align: center;
         }
       }
       &__logo {
@@ -119,11 +129,13 @@ $style: normal;
   height: 50rem;
   display: flex;
   flex-direction: column;
-  &__logo {
+  &__container {
     align-self: flex-end;
-    margin: 3.8rem 2rem 0 0;
-    width: 3rem;
-    height: 3rem;
+    margin: 4.5rem 2rem 0 0;
+    &__logo {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
@@ -133,14 +145,17 @@ $style: normal;
   flex-direction: column;
   color: $dark-blue;
   padding: 2rem 8rem 2rem 8rem;
-  &__logo {
+  &__container {
     align-self: flex-end;
     margin: 0 -6rem 0 0;
-    width: 3rem;
-    height: 3rem;
+    &__logo {
+      width: 3rem;
+      height: 3rem;
+    }
   }
   &__title {
     font-size: 2.5rem;
+    margin-top: 1rem;
   }
   &__line {
     display: block;
@@ -171,6 +186,7 @@ $style: normal;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    margin: 2rem 0 2rem 0;
     &__detail {
       display: flex;
       flex-direction: column;
@@ -178,11 +194,12 @@ $style: normal;
       align-content: center;
       &__icon {
         margin-top: 1rem;
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
       }
       &__text {
         margin: 1rem 0 1rem 0;
+        font-size: 1.5rem;
       }
     }
   }
@@ -194,11 +211,13 @@ $style: normal;
   display: flex;
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
-  &__logo {
+  &__container {
     align-self: flex-end;
     margin: 0 -6rem 2rem 0;
-    width: 3rem;
-    height: 3rem;
+    &__logo {
+      width: 3rem;
+      height: 3rem;
+    }
   }
   &__info {
     &__title {

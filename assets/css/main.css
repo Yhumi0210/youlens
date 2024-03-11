@@ -20,11 +20,20 @@
   z-index: 1;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+}
+.hero__brand {
+  display: flex;
+  color: #C7D5D8;
+  font-family: "junkga-regular", sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 3.5rem;
+  text-align: center;
 }
 .hero__nav {
   width: 50%;
-  margin: 2rem 2rem 0 0;
 }
 .hero__nav__link {
   display: flex;
@@ -43,6 +52,7 @@
   text-decoration: none;
   color: #C7D5D8;
   font-size: 1.2rem;
+  text-align: center;
 }
 .hero__nav__link__logo {
   width: 3rem;
@@ -83,9 +93,11 @@
   display: flex;
   flex-direction: column;
 }
-.project__logo {
+.project__container {
   align-self: flex-end;
-  margin: 3.8rem 2rem 0 0;
+  margin: 4.5rem 2rem 0 0;
+}
+.project__container__logo {
   width: 3rem;
   height: 3rem;
 }
@@ -97,14 +109,17 @@
   color: #3F4851;
   padding: 2rem 8rem 2rem 8rem;
 }
-.selfportrait__logo {
+.selfportrait__container {
   align-self: flex-end;
   margin: 0 -6rem 0 0;
+}
+.selfportrait__container__logo {
   width: 3rem;
   height: 3rem;
 }
 .selfportrait__title {
   font-size: 2.5rem;
+  margin-top: 1rem;
 }
 .selfportrait__line {
   display: block;
@@ -135,6 +150,7 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  margin: 2rem 0 2rem 0;
 }
 .selfportrait__service__detail {
   display: flex;
@@ -144,11 +160,12 @@
 }
 .selfportrait__service__detail__icon {
   margin-top: 1rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 .selfportrait__service__detail__text {
   margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
 }
 
 .footer {
@@ -158,9 +175,11 @@
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
 }
-.footer__logo {
+.footer__container {
   align-self: flex-end;
   margin: 0 -6rem 2rem 0;
+}
+.footer__container__logo {
   width: 3rem;
   height: 3rem;
 }
