@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem 0 2rem;
+  margin: 1rem 2rem 0 2rem;
 }
 .hero__brand {
   display: flex;
@@ -61,7 +61,7 @@
 
 .main {
   height: 100%;
-  margin-top: -6rem;
+  margin-top: -7rem;
   display: flex;
   flex-direction: column;
 }

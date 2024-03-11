@@ -56,7 +56,7 @@ $style: normal;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem 0 2rem;
+  margin: 1rem 2rem 0 2rem;
   &__brand {
     display: flex;
     color: $light-blue;
@@ -96,7 +96,7 @@ $style: normal;
 .main {
   //background-color: $dark-blue;
   height: 100%;
-  margin-top: -6rem;
+  margin-top: -7rem;
   display: flex;
   flex-direction: column;
   &__container {
