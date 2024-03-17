@@ -16,6 +16,15 @@
   padding: 0;
 }
 
+.logo {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 1.6s ease-in-out;
+}
+.logo:hover {
+  transform: rotate(-360deg);
+}
+
 .hero {
   z-index: 1;
   position: relative;
@@ -31,6 +40,7 @@
   letter-spacing: 0.3rem;
   font-size: 3.5rem;
   text-align: center;
+  text-shadow: #3F4851 2px 2px 5px;
 }
 .hero__nav {
   width: 50%;
@@ -53,10 +63,7 @@
   color: #C7D5D8;
   font-size: 1.2rem;
   text-align: center;
-}
-.hero__nav__link__logo {
-  width: 3rem;
-  height: 3rem;
+  text-shadow: #3F4851 2px 2px 2px;
 }
 
 .main {
@@ -76,6 +83,7 @@
   margin: -24rem 8rem 0 8rem;
   color: #C7D5D8;
   font-size: 2.5rem;
+  text-shadow: #3F4851 2px 2px 2px;
 }
 .main__arrow {
   position: relative;
@@ -97,10 +105,6 @@
   align-self: flex-end;
   margin: 4.5rem 2rem 0 0;
 }
-.project__container__logo {
-  width: 3rem;
-  height: 3rem;
-}
 
 .selfportrait {
   background-color: #C7D5D8;
@@ -112,10 +116,6 @@
 .selfportrait__container {
   align-self: flex-end;
   margin: 0 -6rem 0 0;
-}
-.selfportrait__container__logo {
-  width: 3rem;
-  height: 3rem;
 }
 .selfportrait__title {
   font-size: 2.5rem;
@@ -179,10 +179,6 @@
   align-self: flex-end;
   margin: 0 -6rem 2rem 0;
 }
-.footer__container__logo {
-  width: 3rem;
-  height: 3rem;
-}
 .footer__info__title {
   font-size: 2.5rem;
 }
@@ -235,12 +231,40 @@
   font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
+  position: relative;
+}
+.footer__info__social__link__insta:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #C7D5D8;
+  transition: width 400ms ease-in-out;
+}
+.footer__info__social__link__insta:hover:before {
+  width: 100%;
 }
 .footer__info__social__link__behance {
   font-family: "junkga-thin", sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
+  position: relative;
+}
+.footer__info__social__link__behance:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #C7D5D8;
+  transition: width 400ms ease-in-out;
+}
+.footer__info__social__link__behance:hover:before {
+  width: 100%;
 }
 .footer__info__rights {
   font-family: "junkga-thin", sans-serif;

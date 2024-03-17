@@ -46,7 +46,15 @@ $style: normal;
   // font-weight: $weight;
   margin: 0;
   padding: 0;
+}
 
+.logo {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 1.6s ease-in-out;
+  &:hover {
+    transform: rotate(-360deg);
+  }
 }
 
 .hero {
@@ -64,6 +72,7 @@ $style: normal;
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
     text-align: center;
+    text-shadow: $dark-blue 2px 2px 5px;
   }
   &__nav {
     width: 50%;
@@ -83,11 +92,8 @@ $style: normal;
           color: $light-blue;
           font-size: 1.2rem;
           text-align: center;
+          text-shadow: $dark-blue 2px 2px 2px;
         }
-      }
-      &__logo {
-        width: 3rem;
-        height: 3rem;
       }
     }
   }
@@ -112,6 +118,7 @@ $style: normal;
     margin: -24rem 8rem 0 8rem;
     color: $light-blue;
     font-size: 2.5rem;
+    text-shadow: $dark-blue 2px 2px 2px;
   }
   &__arrow {
     position: relative;
@@ -132,10 +139,6 @@ $style: normal;
   &__container {
     align-self: flex-end;
     margin: 4.5rem 2rem 0 0;
-    &__logo {
-      width: 3rem;
-      height: 3rem;
-    }
   }
 }
 
@@ -148,10 +151,6 @@ $style: normal;
   &__container {
     align-self: flex-end;
     margin: 0 -6rem 0 0;
-    &__logo {
-      width: 3rem;
-      height: 3rem;
-    }
   }
   &__title {
     font-size: 2.5rem;
@@ -214,10 +213,6 @@ $style: normal;
   &__container {
     align-self: flex-end;
     margin: 0 -6rem 2rem 0;
-    &__logo {
-      width: 3rem;
-      height: 3rem;
-    }
   }
   &__info {
     &__title {
@@ -272,12 +267,40 @@ $style: normal;
           font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 400ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
         }
         &__behance {
           font-family: $thin;
           font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 400ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
         }
       }
     }
