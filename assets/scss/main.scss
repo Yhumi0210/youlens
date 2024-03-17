@@ -89,11 +89,37 @@ $style: normal;
       &__page {
         text-transform: uppercase;
         &__a {
+          position: relative;
           text-decoration: none;
+          overflow: hidden;
           color: $light-blue;
           font-size: 1.2rem;
           text-align: center;
           text-shadow: $dark-blue 2px 2px 2px;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease, left 300ms ease, right 300ms ease;
+          }
+          &:before {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:after {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:hover:before, &:hover:after {
+            width: 100%;
+            left: 0;
+            right: 0;
+          }
         }
       }
     }
@@ -277,7 +303,7 @@ $style: normal;
             width: 0%;
             height: 2px;
             background-color: $light-blue;
-            transition: width 400ms ease-in-out;
+            transition: width 300ms ease-in-out;
           }
           &:hover:before{
             width: 100%;
@@ -297,7 +323,7 @@ $style: normal;
             width: 0%;
             height: 2px;
             background-color: $light-blue;
-            transition: width 400ms ease-in-out;
+            transition: width 300ms ease-in-out;
           }
           &:hover:before{
             width: 100%;
