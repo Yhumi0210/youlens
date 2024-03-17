@@ -35,6 +35,7 @@
 }
 .hero__brand {
   display: flex;
+  text-decoration: none;
   color: #C7D5D8;
   font-family: "junkga-regular", sans-serif;
   letter-spacing: 0.3rem;

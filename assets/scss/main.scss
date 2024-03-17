@@ -67,6 +67,7 @@ $style: normal;
   margin: 1rem 2rem 0 2rem;
   &__brand {
     display: flex;
+    text-decoration: none;
     color: $light-blue;
     font-family: $regular;
     letter-spacing: 0.3rem;
