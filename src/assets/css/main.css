@@ -19,10 +19,30 @@
   align-items: center;
   margin: 1rem 2rem 0 2rem;
 }
+.hero .menu {
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
+.hero .menu-toggle, .hero .menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero .menu-toggle, .hero .menu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    color: #EDF4FA;
+  }
+}
 .hero__brand {
   display: flex;
   text-decoration: none;
   color: #EDF4FA;
+  background-color: transparent;
   font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -30,11 +50,37 @@
   font-size: 3.5rem;
   text-shadow: #0C1217 2px 2px 5px;
 }
+@media (max-width: 768px) {
+  .hero__brand {
+    font-size: 3rem;
+  }
+}
+.hero__brand__letters {
+  padding-top: 0.6rem;
+}
 .hero__nav {
   width: 50%;
   font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .hero__nav {
+    display: none;
+  }
+  .hero__nav.is-open {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    background-color: #0C1217;
+    border-radius: 0 0 5px 0;
+    width: 20rem;
+    height: 40rem;
+    left: -2rem;
+    top: -1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .hero__nav__link {
   display: flex;
@@ -45,6 +91,17 @@
   list-style-type: none;
   letter-spacing: 0.15rem;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hero__nav__link {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    text-align: left;
+  }
 }
 .hero__nav__link__page {
   text-transform: uppercase;
@@ -57,6 +114,11 @@
   font-size: 1.2rem;
   text-align: center;
   text-shadow: #0C1217 2px 2px 2px;
+}
+@media (max-width: 768px) {
+  .hero__nav__link__page__a {
+    font-size: 2rem;
+  }
 }
 .hero__nav__link__page__a:before, .hero__nav__link__page__a:after {
   content: "";
@@ -111,7 +173,7 @@
 }
 .main__h1 {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   margin: -10rem 8rem 1rem 8rem;
   color: #EDF4FA;
   text-shadow: #0C1217 2px 2px 2px;
