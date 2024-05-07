@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
+}
+
+// fonts
+
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
+
+// colors
+
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
+$white: #FFFFFF;
+
+// font weight
+
+$weight: 500;
+
+// font size
+
+
+
+// font style
+
+$style: normal;
+
+.hero {
+  z-index: 1;
+  position: relative;
+  //background-color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem 0 2rem;
+  &__brand {
+    display: flex;
+    text-decoration: none;
+    color: $light-blue;
+    font-family: $textjo;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    text-shadow: $dark-blue 2px 2px 5px;
+    //&__logo {
+    //  width: 2.6rem;
+    //  height: 2.6rem;
+    //  margin-right: 0.4rem;
+    //  transition: transform 1s cubic-bezier(.16,1.08,.83,1);
+    //  &:hover {
+    //    transform: rotate(360deg);
+    //  }
+    //}
+  }
+  &__nav {
+    width: 50%;
+    font-family: $textjo;
+    font-optical-sizing: auto;
+    font-style: normal;
+    &__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      list-style-type: none;
+      letter-spacing: 0.15rem;
+      cursor: pointer;
+      &__page {
+        text-transform: uppercase;
+        &__a {
+          position: relative;
+          text-decoration: none;
+          overflow: hidden;
+          color: $light-blue;
+          font-size: 1.2rem;
+          text-align: center;
+          text-shadow: $dark-blue 2px 2px 2px;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            bottom: -0.3rem;
+            width: 0;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease, left 300ms ease, right 300ms ease;
+          }
+          &:before {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+            box-shadow: $dark-blue 2px 2px 5px;
+          }
+          &:after {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+            box-shadow: $dark-blue 2px 2px 5px;
+
+          }
+          &:hover:before, &:hover:after {
+            width: 100%;
+            left: 0;
+            right: 0;
+            box-shadow: $dark-blue 2px 2px 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
+}
+
+// fonts
+
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
+
+// colors
+
+//$light-blue: #fafff2;
+//$dark-blue: #161915;
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
+$white: #FFFFFF;
+
+// font weight
+
+$weight: 500;
+
+// font size
+
+
+
+// font style
+
+$style: normal;
+
+.footer {
+  background-color: $light-blue;
+  color: $dark-blue;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem 2rem 8rem;
+  &__container {
+    align-self: flex-end;
+    margin: 0 -6rem 2rem 0;
+    cursor: pointer;
+  }
+  &__info {
+    &__title {
+      &:after {
+        content: "";
+        display: block;
+        background-color: $dark-blue;
+        width: 100%;
+        height: 2px;
+        margin: 0.5rem 0 0.8rem 0;
+      }
+    }
+    &__contact {
+      &:after {
+        content: "";
+        display: block;
+        background-color: $dark-blue;
+        width: 100%;
+        height: 2px;
+        margin: 0.7rem 0 0.8rem 0;
+      }
+      &__number {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__phone {
+          width: 32rem;
+          font-family: $text;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 1.5rem;
+          a {
+            text-decoration: none;
+            list-style-type: none;
+            color: $dark-blue;
+          }
+        }
+        &__line {
+          display: block;
+          background-color: $dark-blue;
+          height: 1.5rem;
+          width: 2px;
+        }
+        &__mail {
+          width: 32rem;
+          font-family: $text;
+          font-optical-sizing: auto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.5rem;
+          text-align: end;
+          a {
+            text-decoration: none;
+            list-style-type: none;
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+    &__social {
+      margin-bottom: 4rem;
+      &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__insta {
+          font-family: $text;
+          font-optical-sizing: auto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $dark-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $dark-blue;
+            transition: width 300ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
+        }
+        &__behance {
+          font-family: $text;
+          font-optical-sizing: auto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $dark-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $dark-blue;
+            transition: width 300ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__rights {
+      font-family: $text;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 300;
+      text-align: center;
+      font-size: 1rem;
+      a {
+        text-decoration: none;
+        list-style-type: none;
+        color: $dark-blue;
+      }
+    }
+  }
+}
