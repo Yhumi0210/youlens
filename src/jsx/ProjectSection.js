@@ -128,7 +128,6 @@ const ProjectSection = () => {
     const renderGallery = () => {
         if (!isGalleryOpen || currentImages.length === 0) return null
         const currentItem = currentImages[currentIndex] || {}
-        console.log(currentImages)
         return (
             <div className="gallery" onClick={closeGallery}>
                 <div className="gallery__infos">
@@ -162,7 +161,7 @@ const ProjectSection = () => {
     return (
         <section id='project-section' className='project'>
             <div className="project__logo" onClick={scrollToTop}>
-                <img className="project__logo__logoproject" src={logofonce} alt="logo Youlens"/>
+                <img className="logo" src={logofonce} alt="logo Youlens"/>
             </div>
                 <h2 className="project__title">Mes projets</h2>
                 <p className="project__line"></p>

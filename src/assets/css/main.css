@@ -166,10 +166,32 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 320px) {
+  .main {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 375px) {
+  .main {
+    margin-top: 1rem;
+  }
+}
 .main__container__video {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+@media (min-width: 320px) {
+  .main__container__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); /* Centre la vidéo */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
 }
 .main__h1 {
   position: relative;
@@ -177,6 +199,16 @@
   margin: -10rem 8rem 1rem 8rem;
   color: #EDF4FA;
   text-shadow: #0C1217 2px 2px 2px;
+}
+@media (min-width: 320px) {
+  .main__h1 {
+    margin: 1rem;
+  }
+}
+@media (min-width: 375px) {
+  .main__h1 {
+    margin: 1rem;
+  }
 }
 .main__arrow {
   position: relative;
@@ -229,21 +261,15 @@
   font-style: normal;
   margin: 7rem 8rem 0 8rem;
 }
+@media (min-width: 320px) {
+  .project {
+    margin: 0 1rem 0 1rem;
+  }
+}
 .project__logo {
   position: relative;
   align-self: flex-end;
-}
-.project__logo__logoproject {
-  position: absolute;
-  top: -3.5rem;
-  right: -6rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  transition: transform 1s cubic-bezier(0.16, 1.08, 0.83, 1);
-}
-.project__logo__logoproject:hover {
-  transform: rotate(360deg);
+  margin: -4rem -6rem 0 0;
 }
 .project__line {
   display: block;
@@ -408,9 +434,39 @@
   color: #EDF4FA;
   padding: 2rem 8rem 2rem 8rem;
 }
+@media (min-width: 320px) {
+  .selfportrait {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .selfportrait {
+    padding: 2rem 6rem 2rem 6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .selfportrait {
+    padding: 2rem 8rem 2rem 8rem;
+  }
+}
 .selfportrait__container {
   align-self: flex-end;
   margin: 0 -6rem 0 0;
+}
+@media (min-width: 320px) {
+  .selfportrait__container {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .selfportrait__container {
+    margin: 0 -4rem 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  .selfportrait__container {
+    margin: 0 -6rem 0 0;
+  }
 }
 .selfportrait__title {
   margin-top: 1rem;
@@ -429,17 +485,70 @@
   align-items: center;
   margin: 1rem 0 1rem 0;
 }
+@media (min-width: 320px) {
+  .selfportrait__text {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .selfportrait__text {
+    flex-direction: row;
+  }
+}
 .selfportrait__text__me {
-  width: 32%;
+  width: 32rem;
   font-size: 1.5rem;
   line-height: 2rem;
   text-indent: 3rem;
   text-align: left;
 }
+@media (min-width: 320px) {
+  .selfportrait__text__me {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-indent: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .selfportrait__text__me {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-indent: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .selfportrait__text__me {
+    line-height: 2rem;
+    text-indent: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .selfportrait__text__me {
+    width: 32rem;
+  }
+}
 .selfportrait__text__img {
-  width: 30%;
+  width: 40%;
   height: auto;
   object-fit: contain;
+}
+@media (min-width: 320px) {
+  .selfportrait__text__img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .selfportrait__text__img {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .selfportrait__text__img {
+    width: 40%;
+  }
 }
 .selfportrait__text__how {
   font-size: 1.5rem;
@@ -447,13 +556,47 @@
   text-indent: 3rem;
   text-align: left;
 }
+@media (min-width: 320px) {
+  .selfportrait__text__how {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 600px) {
+  .selfportrait__text__how {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .selfportrait__text__how {
+    width: 32rem;
+  }
+}
 .selfportrait__service {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin: 2rem 2rem 2rem 2rem;
+  margin: 2rem;
+}
+@media (min-width: 320px) {
+  .selfportrait__service {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .selfportrait__service {
+    display: flex;
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .selfportrait__service {
+    margin: 2rem;
+  }
 }
 .selfportrait__service__detail {
   display: flex;
@@ -467,8 +610,18 @@
   height: 4rem;
 }
 .selfportrait__service__detail__text {
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0;
   font-size: 1.5rem;
+}
+@media (min-width: 320px) {
+  .selfportrait__service__detail__text {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .selfportrait__service__detail__text {
+    font-size: 1.5rem;
+  }
 }
 
 @font-face {
@@ -490,10 +643,46 @@
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
 }
+@media (min-width: 320px) {
+  .footer {
+    padding: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  .footer {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    padding: 2rem 6rem 2rem 6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 2rem 8rem 2rem 8rem;
+  }
+}
 .footer__container {
   align-self: flex-end;
   margin: 0 -6rem 2rem 0;
   cursor: pointer;
+}
+@media (min-width: 320px) {
+  .footer__container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer__container {
+    margin: 0 -4rem 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__container {
+    margin: 0 -6rem 0 0;
+  }
 }
 .footer__info__title:after {
   content: "";
@@ -517,6 +706,16 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 320px) {
+  .footer__info__contact__number {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .footer__info__contact__number {
+    flex-direction: row;
+  }
+}
 .footer__info__contact__number__phone {
   width: 32rem;
   font-family: "Garamond-Regular", serif;
@@ -524,6 +723,11 @@
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
+}
+@media (min-width: 320px) {
+  .footer__info__contact__number__phone {
+    width: 100%;
+  }
 }
 .footer__info__contact__number__phone a {
   text-decoration: none;
@@ -536,6 +740,20 @@
   height: 1.5rem;
   width: 2px;
 }
+@media (min-width: 320px) {
+  .footer__info__contact__number__line {
+    margin: 0.8rem 0;
+    height: 2px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .footer__info__contact__number__line {
+    margin: 0;
+    height: 1.5rem;
+    width: 3px;
+  }
+}
 .footer__info__contact__number__mail {
   width: 32rem;
   font-family: "Garamond-Regular", serif;
@@ -545,10 +763,32 @@
   font-size: 1.5rem;
   text-align: end;
 }
+@media (min-width: 320px) {
+  .footer__info__contact__number__mail {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .footer__info__contact__number__mail {
+    width: 100%;
+    text-align: end;
+  }
+}
 .footer__info__contact__number__mail a {
   text-decoration: none;
   list-style-type: none;
   color: #0C1217;
+}
+@media (min-width: 320px) {
+  .footer__info__contact__number__mail a {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 600px) {
+  .footer__info__contact__number__mail a {
+    font-size: 1.5rem;
+  }
 }
 .footer__info__social {
   margin-bottom: 4rem;
@@ -611,6 +851,21 @@
   font-weight: 300;
   text-align: center;
   font-size: 1rem;
+}
+@media (min-width: 320px) {
+  .footer__info__rights {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 600px) {
+  .footer__info__rights {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__info__rights {
+    font-size: 1rem;
+  }
 }
 .footer__info__rights a {
   text-decoration: none;
@@ -716,7 +971,16 @@ h1 {
   font-size: 3rem;
   background-color: transparent;
 }
-
+@media (min-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2, h3, h4, h5 {
   font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
@@ -725,7 +989,16 @@ h2, h3, h4, h5 {
   font-size: 3rem;
   background-color: transparent;
 }
-
+@media (min-width: 320px) {
+  h2, h3, h4, h5 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  h2, h3, h4, h5 {
+    font-size: 3rem;
+  }
+}
 p, #header, nav, ul, li, a, svg, img, .logo, div, section {
   background-color: transparent;
 }

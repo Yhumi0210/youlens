@@ -20,6 +20,23 @@
   src: url('../../fonts/Didot-Regular.ttf') format('truetype');
 }
 
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
+
 // fonts
 
 $titre: 'Didot-Regular', serif;
@@ -76,6 +93,24 @@ h1 {
   font-size: 3rem;
   background-color: transparent;
   //text-transform: uppercase;
+  @media (min-width: 320px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 375px) {
+  }
+  @media (min-width: 600px) {
+  }
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 992px) {
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1280px) {
+  }
+  @media (min-width: 1440px) {
+  }
 }
 
 h2, h3, h4, h5 {
@@ -86,6 +121,24 @@ h2, h3, h4, h5 {
   font-size: 3rem;
   background-color: transparent;
   //text-transform: uppercase;
+  @media (min-width: 320px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 375px) {
+  }
+  @media (min-width: 600px) {
+  }
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 992px) {
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1280px) {
+  }
+  @media (min-width: 1440px) {
+  }
 }
 
 p, #header, nav, ul, li, a, svg, img, .logo, div, section {

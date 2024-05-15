@@ -76,23 +76,23 @@ function SelfPortraitArticle() {
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__how">
-                    Youlens est une entreprise de communication par l’image<br />
+                    Youlens est une entreprise de communication par l’image
                     spécialisée dans la vidéo aérienne en drone ou en drone FPV.<br />
-                    Je réalise mes photographies et vidéos seul, de la prise de<br />
-                    vue jusqu’à la post production. Je suis basé dans le sud de<br />
+                    Je réalise mes photographies et vidéos seul, de la prise de
+                    vue jusqu’à la post production. Je suis basé dans le sud de
                     la france mais je peux travailler partout dans le monde.<br />
                     <br />
-                    Les projets vont de l’immobilier, du mariage, à la vidéo<br />
-                    corporate d’entreprise en passant par la couverture d’événements<br />
-                    exceptionnels ou encore la mise en avant de lieux culturels<br />
-                    ou historiques. Il m’arrive également de travailler dans un<br />
+                    Les projets vont de l’immobilier, du mariage, à la vidéo
+                    corporate d’entreprise en passant par la couverture d’événements
+                    exceptionnels ou encore la mise en avant de lieux culturels
+                    ou historiques. Il m’arrive également de travailler dans un
                     domaine plus technique dans des usines de fabrications ou dans le BTP.<br />
                     <br />
-                    Une prise de contact débouche sur une discussion autour de<br />
-                    votre projet quel qu’il soit, toutes les idées et envies<br />
+                    Une prise de contact débouche sur une discussion autour de
+                    votre projet quel qu’il soit, toutes les idées et envies
                     sont réalisables en vidéo tant qu’elles correspondent à votre image.<br />
                     <br />
-                    Chaque projet est unique et représente un nouveau défi<br />
+                    Chaque projet est unique et représente un nouveau défi
                     artistique et technique toujours passionnant à relever.<br />
                 </p>
             </div>

@@ -33,7 +33,22 @@ $weight: 500;
 
 // font size
 
-
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
 
 // font style
 
@@ -48,9 +63,27 @@ $style: normal;
   flex-direction: column;
   color: $light-blue;
   padding: 2rem 8rem 2rem 8rem;
+  @media (min-width: 320px) {
+    padding: 1rem;
+  }
+  @media (min-width: 992px) {
+    padding: 2rem 6rem 2rem 6rem;
+  }
+  @media (min-width: 1280px) {
+    padding: 2rem 8rem 2rem 8rem;
+  }
   &__container {
     align-self: flex-end;
     margin: 0 -6rem 0 0;
+    @media (min-width: 320px) {
+      margin: 0;
+    }
+    @media (min-width: 992px) {
+      margin: 0 -4rem 0 0;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 -6rem 0 0;
+    }
   }
   &__title {
     margin-top: 1rem;
@@ -68,23 +101,68 @@ $style: normal;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0 1rem 0;
+    @media (min-width: 320px) {
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
     &__me {
-      width: 32%;
+      width: 32rem;
       font-size: 1.5rem;
       line-height: 2rem;
       text-indent: 3rem;
       text-align: left;
+      @media (min-width: 320px) {
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        text-indent: 2rem;
+      }
+      @media (min-width: 600px) {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-indent: 2rem;
+      }
+      @media (min-width: 992px) {
+        line-height: 2rem;
+        text-indent: 3rem;
+      }
+      @media (min-width: 1280px) {
+        width: 32rem;
+      }
     }
     &__img {
-      width: 30%;
+      width: 40%;
       height: auto;
       object-fit: contain;
+      @media (min-width: 320px) {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+      @media (min-width: 1280px) {
+        width: 40%;
+      }
     }
     &__how {
       font-size: 1.5rem;
       line-height: 2rem;
       text-indent: 3rem;
       text-align: left;
+      @media (min-width: 320px) {
+        width: 100%;
+        font-size: 1.3rem;
+      }
+      @media (min-width: 600px) {
+        font-size: 1.5rem;
+      }
+      @media (min-width: 1280px) {
+        width: 32rem;
+      }
     }
   }
   &__service {
@@ -93,7 +171,19 @@ $style: normal;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 2rem;
+    @media (min-width: 320px) {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      margin: 0 2rem;
+    }
+    @media (min-width: 1440px) {
+      margin: 2rem;
+    }
     &__detail {
       display: flex;
       flex-direction: column;
@@ -105,8 +195,14 @@ $style: normal;
         height: 4rem;
       }
       &__text {
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0;
         font-size: 1.5rem;
+        @media (min-width: 320px) {
+          font-size: 1.3rem;
+        }
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }

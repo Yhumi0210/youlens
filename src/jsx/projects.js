@@ -53,5 +53,12 @@ export const projects = [
         images: ['isOOWsON_QI'],
         thumbnail: 'thumbnailboxstershighlights.webp'
     },
+    {
+        id: 9,
+        title: 'Nîmes Caravane',
+        type: 'vidéo',
+        images: ['dn3Nd9iOzx0'],
+        thumbnail: 'thumbnailnimescaravane.webp'
+    }
     // Ajoutez d'autres projets selon le besoin
 ]
