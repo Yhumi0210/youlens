@@ -59,6 +59,20 @@ export const projects = [
         type: 'vidéo',
         images: ['dn3Nd9iOzx0'],
         thumbnail: 'thumbnailnimescaravane.webp'
+    },
+    {
+        id: 10,
+        title: 'Villa Provence',
+        type: 'vidéo',
+        images: ['YPLeuQd3he4'],
+        thumbnail: 'thumbnailvillamejan.webp'
+    },
+    {
+        id: 11,
+        title: 'Mariage en Crète',
+        type: 'vidéo',
+        images: ['iBsRIOiWZTQ'],
+        thumbnail: 'thumbnailmariageencrete.webp'
     }
     // Ajoutez d'autres projets selon le besoin
 ]

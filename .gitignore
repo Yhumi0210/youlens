@@ -23,4 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Videos
+/public/img/video/Youlens_showreel_2023-2024.mp4
 /src/img/video/Youlens_showreel_2023-2024.mp4
+/src/img/video/Youlens_showreel_2023-2024___v2.mp4
+/public/img/video/Youlens_showreel_2023-2024___v2.mp4

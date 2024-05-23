@@ -73,7 +73,7 @@ $style: normal;
   font-style: normal;
   margin: 7rem 8rem 0 8rem;
   @media (min-width: 320px) {
-    margin: 0 1rem 0 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
   @media (min-width: 375px) {
   }
@@ -82,17 +82,31 @@ $style: normal;
   @media (min-width: 768px) {
   }
   @media (min-width: 992px) {
+    margin: 2rem 6rem 2rem 6rem;
   }
   @media (min-width: 1024px) {
   }
   @media (min-width: 1280px) {
+    margin: 3rem 8rem 2rem 8rem;
   }
   @media (min-width: 1440px) {
+  }
+  @media (min-width: 1920px) {
+    margin: 11rem 8rem 2rem 8rem;
   }
   &__logo {
     position: relative;
     align-self: flex-end;
     margin: -4rem -6rem 0 0;
+    @media (min-width: 320px) {
+      margin: 0;
+    }
+    @media (min-width: 992px) {
+      margin: 0 -4rem 0 0;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 -6rem 0 0;
+    }
   }
     &__title {
       //margin-top: 1rem;
@@ -114,11 +128,53 @@ $style: normal;
     //grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4rem;
     margin: 4rem 0 6rem 0;
+    @media (min-width: 320px) {
+      margin: 0 0 1rem 0;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    @media (min-width: 375px) {
+    }
+    @media (min-width: 600px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+      margin: 2rem 0 2rem 0;
+      flex-direction: row;
+      gap: 2rem;
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+      margin: 4rem 0 6rem 0;
+      gap: 4rem;
+    }
+    @media (min-width: 1440px) {
+    }
     &__item {
       color: $dark-blue;
       cursor: pointer;
       width: 100%;
       height: 100%;
+      @media (min-width: 320px) {
+        width: 30%;
+        height: 30%;
+      }
+      @media (min-width: 375px) {
+      }
+      @media (min-width: 600px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 992px) {
+      }
+      @media (min-width: 1024px) {
+      }
+      @media (min-width: 1280px) {
+      }
+      @media (min-width: 1440px) {
+      }
       .container {
         display: flex;
         justify-content: center;
@@ -152,6 +208,23 @@ $style: normal;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 0.5rem;
+        @media (min-width: 320px) {
+          flex-direction: column;
+        }
+        @media (min-width: 375px) {
+        }
+        @media (min-width: 600px) {
+        }
+        @media (min-width: 768px) {
+        }
+        @media (min-width: 992px) {
+        }
+        @media (min-width: 1024px) {
+        }
+        @media (min-width: 1280px) {
+        }
+        @media (min-width: 1440px) {
+        }
         &__title {
           font-size: 1rem;
           color: $dark-blue;
@@ -190,6 +263,9 @@ $style: normal;
     margin: auto;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    @media (min-width: 320px) {
+      max-width: 95vw;
+    }
     &__video {
       width: 100%;
       height: 100%;
@@ -199,6 +275,24 @@ $style: normal;
       max-width: 60%; /* Utilisez max-width au lieu de width pour une meilleure flexibilité */
       max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
       object-fit: contain;
+      @media (min-width: 320px) {
+        max-width: 95%;
+        max-height: 100vh;
+      }
+      @media (min-width: 375px) {
+      }
+      @media (min-width: 600px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 992px) {
+      }
+      @media (min-width: 1024px) {
+      }
+      @media (min-width: 1280px) {
+      }
+      @media (min-width: 1440px) {
+      }
     }
   &__cross {
     position: absolute;
@@ -209,6 +303,23 @@ $style: normal;
     margin: 2rem;
     color: $light-blue;
     cursor: pointer;
+    @media (min-width: 320px) {
+      margin: 1rem;
+    }
+    @media (min-width: 375px) {
+    }
+    @media (min-width: 600px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+    }
+    @media (min-width: 1440px) {
+    }
   }
 
   &__infos {
@@ -221,6 +332,26 @@ $style: normal;
     align-items: center;
     width: 80%;
     margin-top: 2rem;
+    @media (min-width: 320px) {
+      flex-direction: column;
+      margin-top: 3rem;
+      width: 100%;
+      gap: 0.5rem;
+    }
+    @media (min-width: 375px) {
+    }
+    @media (min-width: 600px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+    }
+    @media (min-width: 1440px) {
+    }
     &__titles {
       font-size: 1rem;
       color: $light-blue;

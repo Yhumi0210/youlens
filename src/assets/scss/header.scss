@@ -53,21 +53,54 @@ $weight: 500;
 $style: normal;
 
 .hero {
+  @media (min-width: 320px) {
+
+  }
+  @media (min-width: 375px) {
+  }
+  @media (min-width: 600px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 992px) {
+
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1280px) {
+  }
+  @media (min-width: 1440px) {
+  }
   .menu {
     margin-top: 1.3rem;
     margin-left: 2rem;
   }
   .menu-toggle, .menu {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: block; // Affiche le bouton burger sur mobile
       background: none;
       border: none;
-      font-size: 1.5rem;
       cursor: pointer;
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       color: $light-blue;
+    }
+    @media (min-width: 320px) {
+    }
+    @media (min-width: 375px) {
+    }
+    @media (min-width: 600px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+    }
+    @media (min-width: 1440px) {
     }
   }
   z-index: 1;
@@ -78,9 +111,6 @@ $style: normal;
   align-items: center;
   margin: 1rem 2rem 0 2rem;
   &__brand {
-    @media (max-width: 768px) {
-      font-size: 3rem;
-    }
     display: flex;
     text-decoration: none;
     color: $light-blue;
@@ -91,8 +121,42 @@ $style: normal;
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
     text-shadow: $dark-blue 2px 2px 5px;
+    @media (min-width: 320px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 375px) {
+    }
+    @media (min-width: 600px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+      font-size: 3.5rem;
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+    }
+    @media (min-width: 1440px) {
+    }
     &__letters {
       padding-top: 0.6rem;
+      @media (min-width: 320px) {
+      }
+      @media (min-width: 375px) {
+      }
+      @media (min-width: 600px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 992px) {
+      }
+      @media (min-width: 1024px) {
+      }
+      @media (min-width: 1280px) {
+      }
+      @media (min-width: 1440px) {
+      }
     }
   }
 
