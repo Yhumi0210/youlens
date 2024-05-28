@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @font-face {
   font-family: "Josefin";
   src: url("../../fonts/JosefinSans.ttf") format("truetype");
@@ -278,16 +280,6 @@
   font-family: "Didot-Regular";
   src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
-#horizontal-scroll-wrapper {
-  overflow-x: auto;
-  scrollbar-width: none; /* Pour Firefox */
-  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
-}
-
-#horizontal-scroll-wrapper::-webkit-scrollbar {
-  display: none; /* Pour Chrome, Safari, et Opera */
-}
-
 .project {
   background-color: #EDF4FA;
   display: flex;
@@ -309,12 +301,12 @@
 }
 @media (min-width: 1280px) {
   .project {
-    margin: 3rem 8rem 2rem 8rem;
+    margin: 3rem 8rem 4rem 8rem;
   }
 }
 @media (min-width: 1920px) {
   .project {
-    margin: 11rem 8rem 2rem 8rem;
+    margin: 11rem 8rem 4rem 8rem;
   }
 }
 .project__logo {
@@ -342,195 +334,6 @@
   background-color: #0C1217;
   height: 2px;
   margin: 1rem 0 1rem 0;
-}
-.project__thumbnail {
-  width: 300vw;
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin: 4rem 0 6rem 0;
-}
-@media (min-width: 320px) {
-  .project__thumbnail {
-    margin: 0 0 1rem 0;
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  .project__thumbnail {
-    margin: 2rem 0 2rem 0;
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-@media (min-width: 1280px) {
-  .project__thumbnail {
-    margin: 4rem 0 6rem 0;
-    gap: 4rem;
-  }
-}
-.project__thumbnail__item {
-  color: #0C1217;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 320px) {
-  .project__thumbnail__item {
-    width: 30%;
-    height: 30%;
-  }
-}
-.project__thumbnail__item .container {
-  display: flex;
-  justify-content: center;
-  gap: 2px;
-  width: 100%;
-  max-height: 30rem;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-}
-.project__thumbnail__item .container .project__thumbnail__item__medias {
-  max-width: 30%;
-  height: auto;
-  object-fit: cover;
-}
-.project__thumbnail__item .container .iframe {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.project__thumbnail__item .container .play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3rem;
-  color: #EDF4FA;
-}
-.project__thumbnail__item__info {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-}
-@media (min-width: 320px) {
-  .project__thumbnail__item__info {
-    flex-direction: column;
-  }
-}
-.project__thumbnail__item__info__title {
-  font-size: 1rem;
-  color: #0C1217;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-}
-.project__thumbnail__item__info__type {
-  font-size: 1rem;
-  color: #0C1217;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-}
-
-.gallery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh; /* Modifié pour s'assurer qu'il occupe toute la hauteur de la fenêtre de visualisation */
-  background-color: rgb(0, 0, 0);
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.gallery__contain {
-  width: 100%;
-  max-width: 70vw; /* Ajustez selon les besoins */
-  margin: auto;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-}
-@media (min-width: 320px) {
-  .gallery__contain {
-    max-width: 95vw;
-  }
-}
-.gallery__contain__video {
-  width: 100%;
-  height: 100%;
-}
-.gallery__photo {
-  max-width: 60%; /* Utilisez max-width au lieu de width pour une meilleure flexibilité */
-  max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
-  object-fit: contain;
-}
-@media (min-width: 320px) {
-  .gallery__photo {
-    max-width: 95%;
-    max-height: 100vh;
-  }
-}
-.gallery__cross {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2rem;
-  height: 2rem;
-  margin: 2rem;
-  color: #EDF4FA;
-  cursor: pointer;
-}
-@media (min-width: 320px) {
-  .gallery__cross {
-    margin: 1rem;
-  }
-}
-.gallery__infos {
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 80%;
-  margin-top: 2rem;
-}
-@media (min-width: 320px) {
-  .gallery__infos {
-    flex-direction: column;
-    margin-top: 3rem;
-    width: 100%;
-    gap: 0.5rem;
-  }
-}
-.gallery__infos__titles {
-  font-size: 1rem;
-  color: #EDF4FA;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-}
-.gallery__infos__type {
-  font-size: 1rem;
-  color: #EDF4FA;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-}
-.gallery__infos__arrow {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 2rem 0 2rem;
-  color: #EDF4FA;
-  cursor: pointer;
 }
 
 @font-face {
@@ -1049,6 +852,212 @@
   font-weight: 400;
   font-size: 1.2rem;
   text-align: justify;
+}
+
+/* Personnalisation du slick-carousel */
+.slick-slide {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  margin: 0 -10px; /* Ajuster la marge pour compenser le padding des slides */
+}
+
+.project__thumbnail__item {
+  color: #0C1217;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 320px) {
+  .project__thumbnail__item {
+    width: 30%;
+    height: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .project__thumbnail__item {
+    width: 100%;
+    height: 100%;
+  }
+}
+.project__thumbnail__item .container {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  max-height: 30rem;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.project__thumbnail__item .container .project__thumbnail__item__medias {
+  max-width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+.project__thumbnail__item .container .iframe {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.project__thumbnail__item .container .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  color: #EDF4FA;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 5px;
+}
+
+/* Icônes personnalisées pour les flèches */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+/* Styles pour les éléments de la galerie */
+.project__thumbnail__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project__thumbnail__item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project__thumbnail__item:hover img {
+  transform: scale(1.1);
+}
+
+.project__thumbnail__item__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.project__thumbnail__item:hover .project__thumbnail__item__info {
+  opacity: 1;
+}
+
+/* Styles pour le titre et le type */
+.project__thumbnail__item__info__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project__thumbnail__item__info__type {
+  font-size: 14px;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__contain {
+  width: 100%;
+  max-width: 70vw; /* Ajustez selon les besoins */
+  margin: auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.gallery__contain__video {
+  width: 100%;
+  height: 100%;
+}
+.gallery__photo {
+  max-width: 100%; /* Utilisez max-width au lieu de width pour une meilleure flexibilité */
+  max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
+  object-fit: contain;
+}
+.gallery__infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+@media (min-width: 320px) {
+  .gallery__infos {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .gallery__infos {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.gallery__infos__titles {
+  font-size: 1rem;
+  color: #EDF4FA;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.gallery__infos__type {
+  font-size: 1rem;
+  color: #EDF4FA;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
 }
 
 @font-face {
