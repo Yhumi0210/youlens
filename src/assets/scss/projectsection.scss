@@ -32,7 +32,7 @@ $weight: 500;
 
 // font size
 
-@media (min-width: 300px) {
+@media (min-width: 280px) {
 }
 @media (min-width: 375px) {
 }
@@ -62,7 +62,7 @@ $style: normal;
   font-optical-sizing: auto;
   font-style: normal;
   margin: 7rem 8rem 0 8rem;
-  @media (min-width: 300px) {
+  @media (min-width: 280px) {
     margin: 2rem 1rem 0
     1rem;
   }
@@ -85,7 +85,7 @@ $style: normal;
     position: relative;
     align-self: flex-end;
     margin: -4rem -6rem 0 0;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       margin: 0;
     }
     @media (min-width: 992px) {

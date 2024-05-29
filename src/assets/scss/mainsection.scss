@@ -31,7 +31,7 @@ $weight: 500;
 
 // font size
 
-@media (min-width: 300px) {
+@media (min-width: 280px) {
 }
 @media (min-width: 375px) {
 }
@@ -57,7 +57,7 @@ $style: normal;
   height: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 300px) {
+  @media (min-width: 280px) {
     margin-top: -4rem;
   }
   @media (min-width: 768px) {
@@ -67,7 +67,7 @@ $style: normal;
     margin-top: -5.8rem;
   }
   &__container {
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       position: relative;
       width: 100%;
       height: 53vh;
@@ -98,7 +98,7 @@ $style: normal;
     color: $light-blue;
     text-shadow: $dark-blue 2px 2px 2px;
     //letter-spacing: 0.2rem;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       margin: -8.2rem 1rem 0 1rem;
     }
     @media (min-width: 320px) {
@@ -133,7 +133,7 @@ $style: normal;
     margin-top: 2rem;
     animation: floatArrow 600ms ease-in-out infinite;
     cursor: pointer;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       display: none;
     }
     @media (min-width: 992px) {

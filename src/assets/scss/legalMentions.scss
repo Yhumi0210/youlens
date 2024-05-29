@@ -52,7 +52,7 @@ $white: #FFFFFF;
   flex-direction: column;
   background-color: $light-blue;
   color: $dark-blue;
-  @media (min-width: 300px) {
+  @media (min-width: 280px) {
     padding: 0 1rem 4rem 1rem;
   }
   @media (min-width: 992px) {
@@ -70,7 +70,7 @@ $white: #FFFFFF;
     align-self: center;
     align-items: center;
     width: 60%;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       width: 100%;
     }
     @media (min-width: 992px) {

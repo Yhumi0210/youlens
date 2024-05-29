@@ -33,7 +33,7 @@ $weight: 500;
 
 // font size
 
-@media (min-width: 300px) {
+@media (min-width: 280px) {
 }
 @media (min-width: 375px) {
 }
@@ -63,7 +63,7 @@ $style: normal;
   flex-direction: column;
   color: $light-blue;
   padding: 2rem 8rem 2rem 8rem;
-  @media (min-width: 300px) {
+  @media (min-width: 280px) {
     padding: 1rem;
   }
   @media (min-width: 992px) {
@@ -75,7 +75,7 @@ $style: normal;
   &__container {
     align-self: flex-end;
     margin: 0 -6rem 0 0;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       margin: 0;
     }
     @media (min-width: 992px) {
@@ -104,7 +104,7 @@ $style: normal;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0 1rem 0;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       flex-direction: column;
     }
     @media (min-width: 768px) {
@@ -116,7 +116,7 @@ $style: normal;
       line-height: 2rem;
       text-indent: 3rem;
       text-align: left;
-      @media (min-width: 300px) {
+      @media (min-width: 280px) {
         width: 100%;
         font-size: 1.3rem;
         line-height: 1.5rem;
@@ -140,7 +140,7 @@ $style: normal;
       width: 40%;
       height: auto;
       object-fit: contain;
-      @media (min-width: 300px) {
+      @media (min-width: 280px) {
         width: 100%;
         margin-top: 1rem;
       }
@@ -156,7 +156,7 @@ $style: normal;
       line-height: 2rem;
       text-indent: 3rem;
       text-align: left;
-      @media (min-width: 300px) {
+      @media (min-width: 280px) {
         width: 100%;
         font-size: 1.3rem;
       }
@@ -175,7 +175,7 @@ $style: normal;
     align-content: center;
     align-items: center;
     margin: 2rem;
-    @media (min-width: 300px) {
+    @media (min-width: 280px) {
       margin: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -200,7 +200,7 @@ $style: normal;
       &__text {
         margin: 1rem 0;
         font-size: 1.5rem;
-        @media (min-width: 300px) {
+        @media (min-width: 280px) {
           font-size: 1.3rem;
         }
         @media (min-width: 768px) {
