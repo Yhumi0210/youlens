@@ -63,7 +63,8 @@ $style: normal;
   font-style: normal;
   margin: 7rem 8rem 0 8rem;
   @media (min-width: 320px) {
-    margin: 2rem 1rem 0 1rem;
+    margin: 2rem 1rem 0
+    1rem;
   }
   @media (min-width: 375px) {
   }
@@ -78,11 +79,6 @@ $style: normal;
   }
   @media (min-width: 1280px) {
     margin: 3rem 8rem 4rem 8rem;
-  }
-  @media (min-width: 1440px) {
-  }
-  @media (min-width: 1920px) {
-    margin: 11rem 8rem 4rem 8rem;
   }
 
   &__logo {

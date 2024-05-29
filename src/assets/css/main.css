@@ -296,7 +296,7 @@
 }
 @media (min-width: 1920px) {
   .main__h1 {
-    margin: -18rem 8rem 1rem 8rem;
+    margin: -10rem 8rem 1rem 8rem;
   }
 }
 .main__arrow {
@@ -363,11 +363,6 @@
 @media (min-width: 1280px) {
   .project {
     margin: 3rem 8rem 4rem 8rem;
-  }
-}
-@media (min-width: 1920px) {
-  .project {
-    margin: 11rem 8rem 4rem 8rem;
   }
 }
 .project__logo {
