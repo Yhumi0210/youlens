@@ -32,5 +32,5 @@ module.exports = {
         'semi': ['error', 'never'],
         'quotes': ['error', 'single']
     },
-    'ignorePatterns': ['node_modules/', 'build/', '.idea/', 'manifest.json', 'App.test.js', 'MainSection.js', 'reportWebVitals.js', 'setupTests.js'],
+    'ignorePatterns': ['node_modules/', 'build/', '.idea/', 'manifest.json', 'MainSection.js'],
 }

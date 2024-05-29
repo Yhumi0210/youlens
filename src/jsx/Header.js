@@ -1,11 +1,21 @@
-import React, { useContext, useState } from 'react'  // Ajout de useState
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollbarContext from './ScrollbarContext'
 import logolight from '../img/icons/logoclair.svg'
 
 function Header() {
     const { getScrollbar } = useContext(ScrollbarContext)
-    const [isMenuOpen, setIsMenuOpen] = useState(false)  // État pour le menu burger
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isAnimating, setIsAnimating] = useState(false)
+
+    const handleMenuToggle = () => {
+        setIsAnimating(true)
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    const handleAnimationEnd = () => {
+        setIsAnimating(false)
+    }
 
     const handleScrollToSection = (sectionId) => {
         const scrollbar = getScrollbar()
@@ -20,15 +30,16 @@ function Header() {
     return (
         <header id="header" className="hero">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                 stroke="currentColor" className="menu-toggle w-6 h-6" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                 stroke="currentColor" className="menu-toggle w-6 h-6" onClick={handleMenuToggle}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
             <Link to="/" className="hero__brand">
                 <p className="hero__brand__letters">YOULENS</p>
             </Link>
-            <nav className={`hero__nav ${isMenuOpen ? 'is-open' : ''}`}>
+            <nav className={`hero__nav ${isMenuOpen ? 'is-open' : isAnimating ? 'is-closed' : ''}`}
+                 onAnimationEnd={handleAnimationEnd}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                     stroke="currentColor" className="menu w-6 h-6" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                     stroke="currentColor" className="menu w-6 h-6" onClick={handleMenuToggle}>
                     <path strokeLinecap="round" strokeLinejoin="round"
                           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
                 </svg>

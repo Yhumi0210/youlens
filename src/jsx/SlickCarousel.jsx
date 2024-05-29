@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import logofonce from '../img/icons/logofonce.svg'
@@ -19,32 +19,6 @@ const SlickCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
     const { getScrollbar } = useContext(ScrollbarContext)
 
-    useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (!isGalleryOpen || (currentImages[currentIndex] && currentImages[currentIndex].type === 'vidéo')) return
-
-            switch (event.key) {
-                case 'ArrowRight':
-                    nextImage(event)
-                    break
-                case 'ArrowLeft':
-                    prevImage(event)
-                    break
-                case 'Escape':
-                    closeGallery()
-                    break
-                default:
-                    break
-            }
-        }
-
-        window.addEventListener('keydown', handleKeyDown)
-
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown)
-        }
-    }, [isGalleryOpen, currentIndex, currentImages])
-
     const toggleBodyScroll = (disable) => {
         if (disable) {
             document.body.classList.add('no-scroll')
@@ -60,7 +34,6 @@ const SlickCarousel = () => {
                 type: selectedProject.type,
                 src: imageName,
                 title: selectedProject.title,
-                projectTitle: selectedProject.title,
             }))
 
             setCurrentImages(formattedImages)
@@ -78,7 +51,6 @@ const SlickCarousel = () => {
                     type: 'vidéo',
                     src: videoId,
                     title: selectedProject.title,
-                    projectTitle: selectedProject.title,
                 }))
             )
             setCurrentIndex(0)
@@ -121,7 +93,7 @@ const SlickCarousel = () => {
                         src={`https://www.youtube.com/embed/${item.src}`}
                         title="YouTube video player"
                         frameBorder="0"
-                        allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         onClick={(e) => e.stopPropagation()}
                         className="gallery__contain__video"
@@ -130,12 +102,14 @@ const SlickCarousel = () => {
             )
         } else {
             return (
-                <img
-                    className="gallery__photo"
-                    src={`../img/photo/${item.src}`}
-                    alt={item.title}
-                    onClick={(e) => e.stopPropagation()}
-                />
+                <div className="gallery__contains">
+                    <img
+                        className="gallery__contains__photo"
+                        src={`../img/photo/${item.src}`}
+                        alt={item.title}
+                        onClick={(e) => e.stopPropagation()}
+                    />
+                </div>
             )
         }
     }
@@ -220,13 +194,13 @@ const SlickCarousel = () => {
                         src: item.src,
                         content: renderGalleryItem(item),
                         description: (
-                            <div className='gallery__infos'>
-                                <p className="gallery__infos__titles">{item.title}</p>
-                                {!isSingleVideo && (
-                                    <p className="gallery__infos__titles">{index + 1} / {currentImages.length}</p>
-                                )}
-                                <p className="gallery__infos__type">PROJET {item.type}</p>
-                            </div>
+                                <div className='gallery__infos'>
+                                    <p className="gallery__infos__titles">{item.title}</p>
+                                    {!isSingleVideo && (
+                                        <p className="gallery__infos__titles">{index + 1} / {currentImages.length}</p>
+                                    )}
+                                    <p className="gallery__infos__type">PROJET {item.type}</p>
+                                </div>
                         )
                     }))}
                     index={currentIndex}
