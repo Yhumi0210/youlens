@@ -63,14 +63,18 @@ $style: normal;
   font-style: normal;
   margin: 7rem 8rem 0 8rem;
   @media (min-width: 280px) {
-    margin: 2rem 1rem 0
-    1rem;
+    margin: 3rem 1rem 0 1rem;
   }
   @media (min-width: 375px) {
   }
-  @media (min-width: 600px) {
+  @media (min-width: 492px) {
+    margin: 0.5rem 1rem 0 1rem;
+  }
+  @media (min-width: 493px) {
+    margin: 2.5rem 1rem 0 1rem;
   }
   @media (min-width: 768px) {
+    margin: 1.5rem 1rem 0 1rem;
   }
   @media (min-width: 992px) {
     margin: 2rem 6rem 2rem 6rem;

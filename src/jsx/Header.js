@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import ScrollbarContext from './ScrollbarContext'
-import logolight from '../img/icons/logoclair.svg'
+import Brand from './Brand'
+import Logo from './Logo'
 
 function Header() {
+    const location = useLocation()
     const { getScrollbar } = useContext(ScrollbarContext)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false)
@@ -27,15 +29,17 @@ function Header() {
         }
     }
 
+    if (location.pathname === '/mentions-legales') {
+        return null // Ne rien afficher si on est sur la page 'Mentions Légales'
+    }
+
     return (
         <header id="header" className="hero">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                  stroke="currentColor" className="menu-toggle w-6 h-6" onClick={handleMenuToggle}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
-            <Link to="/" className="hero__brand">
-                <p className="hero__brand__letters">YOULENS</p>
-            </Link>
+            <Brand/>
             <nav className={`hero__nav ${isMenuOpen ? 'is-open' : isAnimating ? 'is-closed' : ''}`}
                  onAnimationEnd={handleAnimationEnd}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
@@ -55,7 +59,7 @@ function Header() {
                     </li>
                 </ul>
             </nav>
-            <img className="logo" src={logolight} alt="logo Youlens"/>
+            <Logo/>
         </header>
     )
 }

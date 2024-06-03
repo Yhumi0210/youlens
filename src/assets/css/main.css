@@ -44,9 +44,17 @@
     background: none;
     border: none;
     cursor: pointer;
+    min-width: 2rem;
+    min-height: 2rem;
     width: 2.5rem;
     height: 2.5rem;
     color: #EDF4FA;
+  }
+}
+@media (max-width: 320px) {
+  .hero .menu-toggle, .hero .menu {
+    width: 2rem;
+    height: 2rem;
   }
 }
 .hero__brand {
@@ -61,7 +69,15 @@
   font-size: 3.5rem;
   text-shadow: #0C1217 2px 2px 5px;
 }
+.hero__brand__letters {
+  padding-top: 0.6rem;
+}
 @media (min-width: 280px) {
+  .hero__brand {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 320px) {
   .hero__brand {
     font-size: 2rem;
   }
@@ -70,9 +86,6 @@
   .hero__brand {
     font-size: 3.5rem;
   }
-}
-.hero__brand__letters {
-  padding-top: 0.6rem;
 }
 .hero__nav {
   width: 50%;
@@ -99,6 +112,26 @@
     align-items: flex-start;
     animation: slideIn 0.3s forwards;
   }
+}
+@media (max-width: 768px) and (min-width: 280px) {
+  .hero__nav.is-open {
+    width: 15rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 768px) and (min-width: 310px) {
+  .hero__nav.is-open {
+    width: 18rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .hero__nav.is-open {
+    width: 20rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 768px) {
   .hero__nav.is-closed {
     display: flex;
     position: absolute;
@@ -215,12 +248,17 @@
 }
 @media (min-width: 280px) {
   .main {
-    margin-top: -4rem;
+    margin-top: -4.3rem;
+  }
+}
+@media (min-width: 300px) {
+  .main {
+    margin-top: -4.3rem;
   }
 }
 @media (min-width: 768px) {
   .main {
-    margin-top: -4rem;
+    margin-top: -4.3rem;
   }
 }
 @media (min-width: 992px) {
@@ -267,6 +305,11 @@
 @media (min-width: 280px) {
   .main__h1 {
     margin: -8.2rem 1rem 0 1rem;
+  }
+}
+@media (min-width: 308px) {
+  .main__h1 {
+    margin: -6rem 1rem 0 1rem;
   }
 }
 @media (min-width: 320px) {
@@ -357,7 +400,22 @@
 }
 @media (min-width: 280px) {
   .project {
-    margin: 2rem 1rem 0 1rem;
+    margin: 3rem 1rem 0 1rem;
+  }
+}
+@media (min-width: 492px) {
+  .project {
+    margin: 0.5rem 1rem 0 1rem;
+  }
+}
+@media (min-width: 493px) {
+  .project {
+    margin: 2.5rem 1rem 0 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .project {
+    margin: 1.5rem 1rem 0 1rem;
   }
 }
 @media (min-width: 992px) {
@@ -537,7 +595,7 @@
 }
 @media (min-width: 768px) {
   .selfportrait__text__img {
-    width: 100%;
+    width: 60%;
   }
 }
 @media (min-width: 1280px) {
@@ -598,6 +656,7 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
+  text-align: center;
 }
 .selfportrait__service__detail__icon {
   margin-top: 1rem;
@@ -607,6 +666,7 @@
 .selfportrait__service__detail__text {
   margin: 1rem 0;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 @media (min-width: 280px) {
   .selfportrait__service__detail__text {
@@ -769,6 +829,12 @@
     text-align: left;
   }
 }
+@media (min-width: 320px) {
+  .footer__info__contact__number__mail {
+    width: 100%;
+    text-align: left;
+  }
+}
 @media (min-width: 768px) {
   .footer__info__contact__number__mail {
     width: 100%;
@@ -781,6 +847,11 @@
   color: #0C1217;
 }
 @media (min-width: 280px) {
+  .footer__info__contact__number__mail a {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 308px) {
   .footer__info__contact__number__mail a {
     font-size: 1.4rem;
   }
@@ -885,33 +956,33 @@
   font-family: "Didot-Regular";
   src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
-.background {
-  margin-top: -8rem;
-  width: 100%;
-  height: 30rem;
-  position: relative; /* Ajouté pour le positionnement du pseudo-élément */
+.brand-header {
+  z-index: 1;
+  position: relative;
+  background-color: #0C1217;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.background__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media (min-width: 280px) {
+  .brand-header {
+    padding: 1rem 1rem 5rem 1rem;
+  }
 }
-
-.background::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #EDF4FA 100%);
+@media (min-width: 992px) {
+  .brand-header {
+    padding: 1rem 2rem 5rem 2rem;
+  }
+}
+.brand-header__brand-logo {
+  margin-right: -6rem;
 }
 
 .mentions_legales {
   display: flex;
   flex-direction: column;
-  background-color: #EDF4FA;
-  color: #0C1217;
+  background-color: #0C1217;
+  color: #EDF4FA;
 }
 @media (min-width: 280px) {
   .mentions_legales {
@@ -1272,7 +1343,7 @@ h2, h3, h4, h5 {
   }
 }
 
-p, #header, nav, ul, li, a, svg, img, .logo, div, section {
+p, h6, #header, nav, ul, li, a, svg, img, .logo, div, section {
   background-color: transparent;
 }
 

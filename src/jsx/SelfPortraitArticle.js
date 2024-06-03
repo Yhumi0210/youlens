@@ -57,19 +57,19 @@ function SelfPortraitArticle() {
             <section className="selfportrait__service">
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconCamera} alt="Services de vidéo" />
-                    <p className="selfportrait__service__detail__text">Vidéo</p>
+                    <h6 className="selfportrait__service__detail__text">Vidéo</h6>
                 </div>
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconDrone} alt="Services de drone" />
-                    <p className="selfportrait__service__detail__text">Drone</p>
+                    <h6 className="selfportrait__service__detail__text">Drone</h6>
                 </div>
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconPhoto} alt="Services de photographie" />
-                    <p className="selfportrait__service__detail__text">Photographie</p>
+                    <h6 className="selfportrait__service__detail__text">Photographie</h6>
                 </div>
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconMontage} alt="Services de post production" />
-                    <p className="selfportrait__service__detail__text">Post production</p>
+                    <h6 className="selfportrait__service__detail__text">Post production</h6>
                 </div>
             </section>
             <h4 className="selfportrait__title">Comment ça se passe ?</h4>
