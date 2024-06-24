@@ -347,6 +347,9 @@
     margin: -10rem 8rem 1rem 8rem;
   }
 }
+.main__h1__brand {
+  display: none;
+}
 .main__arrow {
   position: relative;
   z-index: 1;

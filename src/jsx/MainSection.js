@@ -24,7 +24,8 @@ function MainSection() {
             <div className="main__container">
                 <video className="main__container__video" autoPlay muted playsInline loop src={videoSrc}></video>
             </div>
-            <h1 className="main__h1">Sublimer les projets par l’image.
+            <h1 className="main__h1">
+                <span className='main__h1__brand'>Youlens</span>Sublimer les projets par l’image.
             </h1>
             <div className="main__arrow" onClick={() => handleScrollToSection('project-section')}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
