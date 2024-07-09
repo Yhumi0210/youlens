@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import videoSrc from '../img/video/Youlens_showreel_2023-2024___v2.mp4'
+import videoSrc from '../img/video/Youlens_showreel_2023-2024___v3.mp4'
 import ScrollbarContext from './ScrollbarContext'
 
 function MainSection() {
