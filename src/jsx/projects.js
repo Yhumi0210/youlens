@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 12,
+        title: 'Soirée Cocktail au Château des Alpilles',
+        type: 'photos',
+        images: ['ChateaudesAlpilles001.jpg', 'ChateaudesAlpilles002.jpg', 'ChateaudesAlpilles003.jpg', 'ChateaudesAlpilles004.jpg', 'ChateaudesAlpilles005.jpg', 'ChateaudesAlpilles006.jpg',
+            'ChateaudesAlpilles007.jpg', 'ChateaudesAlpilles008.jpg', 'ChateaudesAlpilles009.jpg', 'ChateaudesAlpilles010.jpg', 'ChateaudesAlpilles011.jpg', 'ChateaudesAlpilles012.jpg', 'ChateaudesAlpilles013.jpg',
+            'ChateaudesAlpilles014.jpg', 'ChateaudesAlpilles015.jpg', 'ChateaudesAlpilles016.jpg', 'ChateaudesAlpilles017.jpg', 'ChateaudesAlpilles018.jpg', 'ChateaudesAlpilles019.jpg',
+            'ChateaudesAlpilles020.jpg', 'ChateaudesAlpilles021.jpg', 'ChateaudesAlpilles022.jpg', 'ChateaudesAlpilles023.jpg', 'ChateaudesAlpilles024.jpg', 'ChateaudesAlpilles025.jpg',
+            'ChateaudesAlpilles026.jpg', 'ChateaudesAlpilles027.jpg', 'ChateaudesAlpilles028.jpg', 'ChateaudesAlpilles029.jpg', 'ChateaudesAlpilles030.jpg', 'ChateaudesAlpilles031.jpg',
+            'ChateaudesAlpilles032.jpg', 'ChateaudesAlpilles033.jpg', 'ChateaudesAlpilles034.jpg', 'ChateaudesAlpilles035.jpg'],
+    },
+    {
         id: 10,
         title: 'Villa Provence',
         type: 'vidéo',
