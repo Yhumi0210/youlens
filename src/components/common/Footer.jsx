@@ -50,19 +50,35 @@ function Footer() {
                 <section className="footer__info__social">
                     <div className="footer__info__social__link">
                         {location.pathname === '/' ? (
-                            <a className="footer__info__social__link__insta"
-                               href="https://www.instagram.com/guillaumecourt.weddingfilms"
-                               target="_blank"
-                               rel="noreferrer noopener">
-                                Instagram
-                            </a>
+                            <>
+                                <a className="footer__info__social__link__insta"
+                                   href="https://www.instagram.com/guillaumecourt.weddingfilms"
+                                   target="_blank"
+                                   rel="noreferrer noopener">
+                                    Instagram
+                                </a>
+                                <a className="footer__info__social__link__insta"
+                                   href="https://www.facebook.com/share/1Mb9iuBAUf/"
+                                   target="_blank"
+                                   rel="noreferrer noopener">
+                                    Facebook
+                                </a>
+                            </>
                         ) : (
-                            <a className="footer__info__social__link__insta"
-                               href="https://www.instagram.com/youlens__?igsh=NXR6Y3F4ZjJyYjdi"
-                               target="_blank"
-                               rel="noreferrer noopener">
-                                Instagram
-                            </a>
+                            <>
+                                <a className="footer__info__social__link__insta"
+                                   href="https://www.instagram.com/youlens__?igsh=NXR6Y3F4ZjJyYjdi"
+                                   target="_blank"
+                                   rel="noreferrer noopener">
+                                    Instagram
+                                </a>
+                                <a className="footer__info__social__link__insta"
+                                   href="https://www.facebook.com/share/1Mb9iuBAUf/"
+                                   target="_blank"
+                                   rel="noreferrer noopener">
+                                    Facebook
+                                </a>
+                            </>
                         )}
 
                     </div>

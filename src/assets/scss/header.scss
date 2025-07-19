@@ -244,5 +244,9 @@ $style: normal;
   .insta {
     width: 2rem;
     height: 2rem;
+    transition: transform 1s cubic-bezier(.16,1.08,.83,1);
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
   }

@@ -4,7 +4,8 @@ import {Link, useLocation, useNavigate} from 'react-router-dom'
 import Brand from './Brand'
 import Logo from './Logo'
 import logoclair from '../../assets/img/icons/logoclair.svg'
-import insta from '../../assets/img/icons/insta.svg'
+import insta from '../../assets/img/icons/insta2.svg'
+import facebook from '../../assets/img/icons/facebook.svg'
 
 
 export default function Header() {
@@ -99,6 +100,10 @@ export default function Header() {
                                target="_blank" rel="noreferrer noopener">
                                 <img className='insta' src={insta} alt='logo Instagram'/>
                             </a>
+                            <a href="https://www.facebook.com/share/1Mb9iuBAUf/"
+                               target="_blank" rel="noreferrer noopener">
+                                <img className='insta' src={facebook} alt='logo Instagram'/>
+                            </a>
                         </div>
                     ) : (
                         <div className="nav__wedding">
@@ -116,6 +121,10 @@ export default function Header() {
                             <a href="https://www.instagram.com/guillaumecourt.weddingfilms?igsh=NjloYWx0cTZuMHky"
                                target="_blank" rel="noreferrer noopener">
                                 <img className='insta' src={insta} alt='logo Instagram'/>
+                            </a>
+                            <a href="https://www.facebook.com/share/1Mb9iuBAUf/"
+                               target="_blank" rel="noreferrer noopener">
+                                <img className='insta' src={facebook} alt='logo Instagram'/>
                             </a>
                         </div>
                     )}

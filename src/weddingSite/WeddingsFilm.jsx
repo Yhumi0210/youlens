@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {Fragment, useState} from 'react'
 import { weddingsProjects } from './datas/weddingsProjects'
 // import GalleryOpener from '../components/common/GalleryOpener'
 // import Lightbox from 'yet-another-react-lightbox'
@@ -118,7 +118,26 @@ export default function Filmography() {
                         </svg>
                 </div>
                 <h3 className='filmography__events__justmarried'>{currentProject.title.toUpperCase()}</h3>
-                <p className='filmography__events__commentary'>{currentProject.commentary}</p>
+                {Array.isArray(currentProject.commentary)
+                    ? currentProject.commentary.map((comment, index) => (
+                        <p key={index} className='filmography__events__commentary'>
+                            {comment.split('\n').map((line, i) => (
+                                <Fragment key={i}>
+                                    {line}
+                                    <br />
+                                </Fragment>
+                            ))}
+                        </p>
+                    ))
+                    : <p className='filmography__events__commentary'>
+                        {currentProject.commentary.split('\n').map((line, i) => (
+                            <Fragment key={i}>
+                                {line}
+                                <br />
+                            </Fragment>
+                        ))}
+                    </p>
+                }
                 <Lightbox
                     open={isGalleryOpen}
                     close={closeGallery}

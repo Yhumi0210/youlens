@@ -1,5 +1,31 @@
 export const projects = [
     {
+        id: 15,
+        title: 'Freyssinet - Pont sur la Lergue',
+        subtitle: 'vidéo',
+        type: 'vidéo',
+        images: ['ZKwTVA1K1Q4'],
+        thumbnail: 'miniature_yt.webp'
+    },
+    {
+        id: 14,
+        title: 'Prieuré de Pompiéry',
+        subtitle: 'photos immobilières',
+        type: 'photos',
+        images: ['prieure001.jpg', 'prieure002.jpg', 'prieure003.jpg', 'prieure004.jpg', 'prieure005.jpg', 'prieure006.jpg', 'prieure007.jpg',
+            'prieure008.jpg', 'prieure009.jpg', 'prieure010.jpg', 'prieure011.jpg', 'prieure012.jpg', 'prieure013.jpg', 'prieure014.jpg',
+            'prieure015.jpg', 'prieure016.jpg', 'prieure017.jpg', 'prieure018.jpg', 'prieure019.jpg', 'prieure020.jpg', 'prieure021.jpg',
+            'prieure023.jpg', 'prieure024.jpg', 'prieure025.jpg'],
+    },
+    {
+        id: 13,
+        title: 'Prieuré de Pompiéry',
+        subtitle: 'vidéo immobilière',
+        type: 'vidéo',
+        images: ['2-o2UTSwGzQ'],
+        thumbnail: 'thumbnailprieure.webp'
+    },
+    {
         id: 12,
         title: 'Soirée Cocktail au Château des Alpilles',
         type: 'photos',
@@ -85,5 +111,6 @@ export const projects = [
         images: ['dn3Nd9iOzx0'],
         thumbnail: 'thumbnailnimescaravane.webp'
     },
+
     // Ajoutez d'autres projets selon le besoin
 ]

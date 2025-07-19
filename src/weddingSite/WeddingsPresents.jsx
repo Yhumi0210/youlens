@@ -7,8 +7,8 @@ export default function Presents() {
                     Je m`appelle Guillaume, je suis vidéaste de mariage.
                     Ma passion pour le monde des images a démarré il y a 6
                     ans lors de mes études de cinéma d`animation 3D.
-                    Cette vocation ma mené à Paris pendant deux années,
-                    durant lesquelles jai travaillé pour des longs
+                    Cette vocation m`a mené à Paris pendant deux années,
+                    durant lesquelles j`ai travaillé sur des longs
                     métrages en tant que lighter.<br/>
                     <br/>
                     Le manque de contact humain et l`absence de travail en

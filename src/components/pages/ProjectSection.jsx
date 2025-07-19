@@ -35,6 +35,7 @@ const SlickCarousel = () => {
                 type: selectedProject.type,
                 src: imageName,
                 title: selectedProject.title,
+                subtitle: selectedProject.subtitle,
             }))
 
             setCurrentImages(formattedImages)
@@ -177,7 +178,12 @@ const SlickCarousel = () => {
                         </div>
                         <div className="project__thumbnail__item__info">
                             <p className="project__thumbnail__item__info__title">{project.title}</p>
-                            <p className="project__thumbnail__item__info__type">{project.type.toLowerCase()}</p>
+                            {project.subtitle ? (
+                                <p className="project__thumbnail__item__info__type">{project.subtitle}</p>
+                            ) : (
+                                <p className="project__thumbnail__item__info__type">{project.type.toLowerCase()}</p>
+                            )}
+
                         </div>
                     </div>
                 ))}
@@ -195,7 +201,9 @@ const SlickCarousel = () => {
                                 {!isSingleVideo && (
                                     <p className="gallery__infos__number">{index + 1} / {currentImages.length}</p>
                                 )}
-                                <p className="gallery__infos__type">PROJET {item.type}</p>
+                                <p className="gallery__infos__type">
+                                    PROJET {item.subtitle ? item.subtitle : item.type}
+                                </p>
                             </div>
                         )
                     }))}

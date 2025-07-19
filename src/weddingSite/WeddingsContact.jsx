@@ -61,19 +61,19 @@ export default function WeddingsContact() {
 
             if (response.ok) {
                 // Télécharge le PDF après la soumission
-                try {
-                    const link = document.createElement('a')
-                    link.href = '/Guillaume_Court_WeddingFIlms_2024_2025.pdf'
-                    link.download = 'Guillaume_Court_WeddingFIlms_2024_2025.pdf'
-                    document.body.appendChild(link)
-                    link.click()
-                    document.body.removeChild(link)
-                } catch (error) {
-                    console.error('Erreur lors du téléchargement du fichier :', error)
-                }
+                // try {
+                //     const link = document.createElement('a')
+                //     link.href = '/Guillaume_Court_WeddingFIlms_2024_2025.pdf'
+                //     link.download = 'Guillaume_Court_WeddingFIlms_2024_2025.pdf'
+                //     document.body.appendChild(link)
+                //     link.click()
+                //     document.body.removeChild(link)
+                // } catch (error) {
+                //     console.error('Erreur lors du téléchargement du fichier :', error)
+                // }
 
                 openModal()
-                console.log('Merci pour votre message! Vous allez télécharger un pdf contenant toutes les informations utiles.')
+                // console.log('Merci pour votre message! Vous allez télécharger un pdf contenant toutes les informations utiles.')
             } else {
                 openErrorModal()
                 console.error('Erreur lors de l\'envoi de l\'e-mail, veuillez réessayer.')
@@ -131,7 +131,10 @@ export default function WeddingsContact() {
 
                     {/* Success Modal */}
                     <AutoCloseModal isOpen={isModalOpen} onClose={closeModal} autoCloseTime={3500}>
-                        <h2 className='modal'>Merci pour votre message! <br/>Vous allez pouvoir télécharger un fichier pdf contenant toutes les informations utiles.</h2>
+                        <h2 className='modal'>
+                            Merci pour votre message!<br/>
+                            {/*Vous allez pouvoir télécharger un fichier pdf contenant toutes les informations utiles.*/}
+                        </h2>
                     </AutoCloseModal>
 
                     {/* Error Modal */}
