@@ -117,8 +117,8 @@ export default function WeddingsContact() {
                     <input type='text' name='firstname' value={formData.firstname} onChange={handleChange} required/>
                     <label htmlFor='email'>E-mail *</label>
                     <input type='email' name='email' value={formData.email} onChange={handleChange} required/>
-                    <label htmlFor='phone'>Téléphone</label>
-                    <input type='tel' name='phone' value={formData.phone} onChange={handleChange}/>
+                    <label htmlFor='phone'>Téléphone *</label>
+                    <input type='tel' name='phone' value={formData.phone} onChange={handleChange} required/>
                     <label htmlFor='date'>Date du projet *</label>
                     <input type='date' name='date' value={formData.date} onChange={handleChange} required/>
                     <label htmlFor='location'>Lieu de réception *</label>

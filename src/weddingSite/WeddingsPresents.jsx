@@ -1,4 +1,4 @@
-import midho from '../assets/img/photo/midho.jpg'
+import midho from '../assets/img/photo/photo_guillaume.webp'
 
 export default function Presents() {
     return (

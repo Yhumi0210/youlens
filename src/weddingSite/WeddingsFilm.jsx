@@ -84,10 +84,6 @@ export default function Filmography() {
     }
 
     const currentProject = weddingsProjects.length > 0 ? weddingsProjects[currentIndex] : null
-    // const currentProject = weddingsProjects[currentIndex]
-    console.log('weddingsProjects:', weddingsProjects)
-    console.log('currentIndex:', currentIndex)
-    console.log('currentProject:', currentProject)
     const isSingleVideo = currentImages.length === 1 && currentImages[0].type === 'vidéo'
 
     return (
